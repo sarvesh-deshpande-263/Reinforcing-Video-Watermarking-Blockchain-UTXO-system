@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/static/images/fav.PNG" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <title>Verify Video Hash</title>
+  </head>
+  <body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/">Wallet</a></li>
+            <li><a href="/verify">Verify</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="wallet-container">
+      <h1>Verify Stored Video Hash</h1>
+
+      <form action="/verify" id="form" method="post">
+        <label for="from">Address:</label><br />
+        <input type="text" id="from" name="fromAddress" required /><br />
+
+        <label for="videoHash">Video Hash:</label><br />
+        <input type="text" id="videoHash" name="videoHash" required /><br /><br />
+
+        <span> {{ message }} </span> <br />
+        <input type="submit" value="Verify" />
+      </form>
+    </div>
+  </body>
+</html>
