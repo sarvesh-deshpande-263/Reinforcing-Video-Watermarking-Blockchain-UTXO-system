@@ -11,6 +11,7 @@ from multiprocessing import Process, Manager
 from BlockChain.frontend.run import main
 import time
 
+
 ZERO_HASH = '0' * 64
 VERSION = 1
 
